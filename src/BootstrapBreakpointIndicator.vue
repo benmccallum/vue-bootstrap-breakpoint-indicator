@@ -17,8 +17,8 @@
 <style>
   #bootstrap-breakpoint-indicator {
     position: absolute;
-    top: 5;
-    left: 5;
+    top: 5px;
+    left: 5px;
     background-color: #ccc;
     font-size: .6rem;
     margin: 2px;
