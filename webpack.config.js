@@ -1,41 +1,38 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const { VueLoaderPlugin } = require('vue-loader');
 
 var config = {
+  mode: 'production',
   output: {
     path: path.resolve(__dirname + '/dist/'),
   },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.js$/,
-        loader: 'babel',
-        include: __dirname,
+        test: /\.vue$/,
+        use: 'vue-loader',        
         exclude: /node_modules/
       },
       {
-        test: /\.vue$/,
-        loader: 'vue'
-      },
-      {
         test: /\.css$/,
-        loader: 'style!css'
+        use: [
+          'vue-style-loader',
+          'css-loader'
+        ],        
+        exclude: /node_modules/
       }
     ]
   },
+  optimization: {
+    minimizer: [new UglifyJsPlugin()]
+  },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin( {
-      minimize : true,
-      sourceMap : false,
-      mangle: true,
-      compress: {
-        warnings: false
-      }
-    } )
+    new VueLoaderPlugin()
   ]
 };
-
 
 module.exports = [
   merge(config, {
