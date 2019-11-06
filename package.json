@@ -14,8 +14,10 @@
     "url": "git+https://github.com/benmccallum/vue-bootstrap-breakpoint-indicator"
   },
   "devDependencies": {
+    "clean-css": "^4.2.1",
     "css-loader": "^3.2.0",
     "rimraf": "^3.0.0",
+    "set-value": "^3.0.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "vue": "^2.6.10",
     "vue-html-loader": "^1.2.4",
