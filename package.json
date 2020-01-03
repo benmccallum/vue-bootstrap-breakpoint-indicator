@@ -2,9 +2,10 @@
   "name": "vue-bootstrap-breakpoint-indicator",
   "version": "1.0.2",
   "description": "A Vue.js component that displays a small indicator of the current Bootstrap breakpoint (e.g. XS, SM, MD, LG or XL).",
-  "main": "dist/vue-bootstrap-breakpoint-indicator.js",
+  "main": "dist/VueBootstrapBreakpointIndicator.umd.js",
+  "unpkg": "dist/VueBootstrapBreakpointIndicator.umd.min.js",
   "scripts": {
-    "build": "rimraf ./dist && webpack --config ./webpack.config.js"
+    "build": "vue-cli-service build --target lib src/BootstrapBreakpointIndicator.vue --name VueBootstrapBreakpointIndicator"
   },
   "author": "Ben McCallum",
   "license": "MIT",
@@ -14,18 +15,8 @@
     "url": "git+https://github.com/benmccallum/vue-bootstrap-breakpoint-indicator"
   },
   "devDependencies": {
-    "clean-css": "^4.2.1",
-    "css-loader": "^3.2.0",
-    "rimraf": "^3.0.0",
-    "set-value": "^3.0.1",
-    "uglifyjs-webpack-plugin": "^2.2.0",
+    "@vue/cli-service": "^4.1.2",
     "vue": "^2.6.10",
-    "vue-html-loader": "^1.2.4",
-    "vue-loader": "^15.7.2",
-    "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.10",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "webpack-merge": "^4.2.2"
+    "vue-template-compiler": "^2.6.10"    
   }
 }
