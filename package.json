@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-bootstrap-breakpoint-indicator",
-  "version": "1.0.2",
+  "version": "1.0.0-alpha.0",
   "description": "Vue-cli plugin that displays a small indicator of the current Bootstrap breakpoint (e.g. XS, SM, MD, LG or XL).",
   "keywords": [
     "vue",
@@ -24,6 +24,13 @@
     "type": "git",
     "url": "git+https://github.com/benmccallum/vue-bootstrap-breakpoint-indicator"
   },
+  "files": [
+    "dist/*",
+    "!dist/*.html",
+    "src/*",
+    "*.json",
+    "*.md"
+  ],
   "devDependencies": {
     "@vue/cli-service": "^4.2.3",
     "vue-template-compiler": "^2.6.11"
