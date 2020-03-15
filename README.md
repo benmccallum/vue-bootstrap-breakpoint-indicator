@@ -13,31 +13,29 @@ npm install --save-dev vue-bootstrap-breakpoint-indicator
 
 ### Browser
 
-See /examples/demo.html
+See [example](/examples/demo.html)
 
-### Module
+### Vue SFC
 
-```js
-import VueBootstrapBreakpointIndicator from 'vue-bootstrap-breakpoint-indicator';
-```
+```vue
+<template>
+  <breakpoint-indicator></breakpoint-indicator>  
+</template>
 
-## Usage
-
-Once installed, it can be used in a template as below:
-
-```html
-<vue-bootstrap-breakpoint-indicator></vue-bootstrap-breakpoint-indicator>
-```
-
-You may need to list it explicitly as a component you depend on when using it, e.g:
-
-```javascript
-export default {
+<script>
+  import VueBootstrapBreakpointIndicator from 'vue-bootstrap-breakpoint-indicator';
+  
+  export default {
     name: 'app',
     components: {
-      'vue-bootstrap-breakpoint-indicator': VueBootstrapBreakpointIndicator
+      'breakpoint-indicator': VueBootstrapBreakpointIndicator
     }
-  }
-```
+  };
+</script>
 
-You can use the registration to give it an alias if you desire.
+<style src="vue-bootstrap-breakpoint-indicator/dist/VueBootstrapBreakpointIndicator.css"></style>
+
+<style lang="scss">
+  // Your own styles
+</style>
+```

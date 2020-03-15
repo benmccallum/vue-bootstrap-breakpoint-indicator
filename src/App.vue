@@ -8,12 +8,6 @@
   </div>
 </template>
 
-<script>
-  export default {
-
-  }
-</script>
-
 <style>
   #vue-bootstrap-breakpoint-indicator {
     position: absolute;
