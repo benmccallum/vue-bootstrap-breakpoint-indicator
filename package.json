@@ -1,6 +1,6 @@
 {
   "name": "vue-bootstrap-breakpoint-indicator",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A Vue component that displays an indicator of the current Bootstrap breakpoint (e.g. XS, SM, MD, LG or XL).",
   "keywords": [
     "vue",
@@ -31,6 +31,8 @@
   ],
   "devDependencies": {
     "@vue/cli-service": "^4.2.3",
+    "minimist": "^1.2.5",
+    "set-value": "^2.0.1",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11"
   }
