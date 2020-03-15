@@ -1,22 +1,31 @@
 {
-  "name": "vue-bootstrap-breakpoint-indicator",
+  "name": "vue-cli-plugin-bootstrap-breakpoint-indicator",
   "version": "1.0.2",
-  "description": "A Vue.js component that displays a small indicator of the current Bootstrap breakpoint (e.g. XS, SM, MD, LG or XL).",
+  "description": "Vue-cli plugin that displays a small indicator of the current Bootstrap breakpoint (e.g. XS, SM, MD, LG or XL).",
+  "keywords": [
+    "vue",
+    "bootstrap",
+    "breakpoint",
+    "indicator",
+    "responsive",
+    "debugging"
+  ],
   "main": "dist/VueBootstrapBreakpointIndicator.umd.js",
   "unpkg": "dist/VueBootstrapBreakpointIndicator.umd.min.js",
   "scripts": {
-    "build": "vue-cli-service build --target lib src/BootstrapBreakpointIndicator.vue --name VueBootstrapBreakpointIndicator"
+    "build": "vue-cli-service build --target lib --name VueBootstrapBreakpointIndicator"
   },
   "author": "Ben McCallum",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/benmccallum/vue-bootstrap-breakpoint-indicator"
   },
   "devDependencies": {
-    "@vue/cli-service": "^4.1.2",
-    "vue": "^2.6.10",
-    "vue-template-compiler": "^2.6.10"    
+    "@vue/cli-service": "^4.2.3",
+    "vue-template-compiler": "^2.6.11"
   }
 }

@@ -7,7 +7,8 @@ Note: the element the component renders is positioned absolutely with some defau
 ## Installation
 
 ```js
-npm i --save-dev vue-bootstrap-breakpoint-indicator
+yarn add --dev vue-bootstrap-breakpoint-indicator
+npm install --save-dev vue-bootstrap-breakpoint-indicator
 ```
 
 ### Browser
